@@ -1,0 +1,10 @@
+
+pip install -r requirements.txt下载依赖库
+pip freeze > requirements.txt导出依赖库
+pyuic5 -o leeserial.py serial.ui可以将ui文件转化为目标的py文件
+
+pyuic5 -o FDdebug.py debug.ui
+pyuic5 -o FDcontrol.py control.ui
+pyuic5 -o FDwatchwindow.py watchwindow.ui
+
+pyinstaller --onefile --windowed --icon="icon.ico" main.py转化为exe文件
